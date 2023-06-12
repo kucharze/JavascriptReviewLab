@@ -10,8 +10,8 @@ item = "new";
 let item2 = item;
 
 //4. What are declare, assign, define
-//Declare - creating a variable
-//Assign - assigning a variable with the = operator
+//Declare - creating a variable and give it a name and data type
+//Assign - assigning a variable a value with the = operator
 //Define - assign a variable a value
 
 //5 what is pseudocoding and why should you do it?
@@ -22,3 +22,5 @@ let item2 = item;
 //you're going to solve a problem vs actually typing in code to solve it?
 
 //You should spend about 10 mins solving the problem and then about an hour to write the code
+
+//B Strings
