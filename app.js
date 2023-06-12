@@ -272,3 +272,24 @@ console.log(`Thom is looking fiece in a ${shirt}, ${pants}, and ${acc}`);
 thomsCloset[1][2] = "Footie Pajamas";
 
 console.log(thomsCloset);
+
+//IV Functions
+//A PrintGreeting
+
+const printGreeting = (name) => {
+  return `Hello there, ${name}`;
+};
+
+console.log(printGreeting("Slimer"));
+
+//B printCool
+const printCool = (name) => {
+  return `${name} is cool`;
+};
+console.log(printCool("Captain Reynolds"));
+
+//C CalculateCube
+const calculateCube = (cube) => {
+  return cube * cube * cube;
+};
+console.log(calculateCube(5));
