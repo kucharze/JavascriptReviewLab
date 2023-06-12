@@ -24,3 +24,26 @@ let item2 = item;
 //You should spend about 10 mins solving the problem and then about an hour to write the code
 
 //B Strings
+//1,2
+let firstVariable = "Hello World";
+
+//3
+firstVariable = 5;
+
+//4
+let secondVariable = firstVariable;
+
+//5
+secondVariable = "New String";
+
+//6
+//The value of first variable should be 5 in this instance
+
+//7
+let yourName = "Zack";
+
+let sentence = "Hello my name is " + yourName;
+
+//C Booleans
+
+// console.log(sentence);
