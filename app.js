@@ -132,3 +132,143 @@ for (let i = 1; i <= 100; i++) {
 }
 bankAccount2 *= 2;
 console.log(bankAccount2);
+
+//III. Arrays & Control flow
+
+//A. Talk about it:
+//1. The thing in an array is called an index
+
+//2 Arrays are guareenteed to be in order
+
+//3 You could model a menu with an array
+
+//b Easy does it
+let quotes = ["Bookem dano", "A Pirates life for me", "Yea baby"];
+
+//C Accessing elements
+const randomThings = [1, 10, "Hello", true];
+//1
+randomThings[0];
+
+//2
+randomThings[2] = "World";
+
+//3
+console.log(randomThings[2]);
+
+//D Change Values
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
+
+//1
+ourClass[2];
+
+//2
+ourClass[4] = "Octocat";
+
+//3
+ourClass.push("Cloud City");
+
+//Mix it up
+const myArray = [5, 10, 500, 20];
+
+//1
+myArray.push("Aegon");
+myArray.push("MyString");
+
+//2
+myArray.shift();
+
+//3
+myArray.unshift("Bob Marley");
+
+//4
+myArray.pop();
+
+//5
+let ar = myArray.reverse();
+console.log(ar);
+//I did mutate the array
+//To mutate the array means to change the array
+//Reverse returns a link to the same array
+
+//F Biggie Smalls
+let myVar = 20;
+
+if (myVar < 100) {
+  console.log("Little number");
+} else {
+  console.log("Big number");
+}
+
+//G Monkey in the middle
+
+if (myVar < 5) {
+  console.log("Little Number");
+} else if (myVar > 10) {
+  console.log("Big number");
+} else {
+  console.log("Monkey");
+}
+
+//H What's in your closet?
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "Per Scholas hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps",
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],
+  [
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs",
+  ],
+  [
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans",
+  ],
+];
+
+//1
+console.log(`Kristen is rocking that ${kristynsCloset[2]} today`);
+
+//2
+kristynsCloset.splice(6, 1, "raybeans", "marshmallow peeps");
+
+//3
+kristynsCloset[5] = "Stained knit hat";
+
+console.log(kristynsCloset);
+
+//4
+let shirt = thomsCloset[0][0];
+
+//5
+let pants = thomsCloset[1][0];
+
+//6
+let acc = thomsCloset[2][0];
+
+//7
+console.log(`Thom is looking fiece in a ${shirt}, ${pants}, and ${acc}`);
+
+//8
+thomsCloset[1][2] = "Footie Pajamas";
+
+console.log(thomsCloset);
