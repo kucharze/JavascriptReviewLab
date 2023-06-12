@@ -106,3 +106,29 @@ for (let i = 1; i <= 100; i++) {
     console.log(i);
   }
 }
+
+//C Give me 5
+for (let i = 0; i < 100; i++) {
+  if (i % 5 === 0) {
+    console.log(`I found a ${i}, High Five!`);
+  }
+  if (i % 3 === 0) {
+    console.log(`I found a ${i}, Three is a crowd`);
+  }
+}
+
+//D Savings account
+let bankAccount = 0;
+
+for (let i = 1; i <= 10; i++) {
+  bankAccount += i;
+}
+console.log(bankAccount);
+
+let bankAccount2 = 0;
+
+for (let i = 1; i <= 100; i++) {
+  bankAccount2 += i;
+}
+bankAccount2 *= 2;
+console.log(bankAccount2);
