@@ -293,3 +293,74 @@ const calculateCube = (cube) => {
   return cube * cube * cube;
 };
 console.log(calculateCube(5));
+
+//D isVowel
+const isVowel = (v) => {
+  if (v === "a" || v === "e" || v === "i" || v === "o" || v === "u") {
+    return true;
+  } else {
+    return false;
+  }
+};
+console.log(isVowel("a"));
+console.log(isVowel("e"));
+console.log(isVowel("i"));
+console.log(isVowel("o"));
+console.log(isVowel("u"));
+
+//E getTwoLengths
+const getTwoLengths = (x1, x2) => {
+  let myArray = [];
+  myArray.push(x1.length);
+  myArray.push(x2.length);
+
+  return myArray;
+};
+console.log(getTwoLengths("Hank", "Hippopopalous"));
+
+//F Get multiple lengths
+const getMultipleLengths = (x) => {
+  let myArray = [];
+  for (let i = 0; i < x.length; i++) {
+    myArray.push(x[i].length);
+  }
+
+  return myArray;
+};
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+
+//G maxOfThree
+const maxOfThree = (a, b, c) => {
+  if (a >= b && a >= c) {
+    return a;
+  } else if (b >= a && b >= c) {
+    return b;
+  } else if (c >= a && c >= a) {
+    return c;
+  }
+};
+console.log(maxOfThree(6, 9, 1));
+
+//H printLongest word
+const printLongestWord = (words) => {
+  let longest = "";
+
+  words.forEach((e) => {
+    if (e.length > longest.length) {
+      longest = e;
+    }
+  });
+  return longest;
+};
+console.log(
+  printLongestWord([
+    "BoJack",
+    "Princess",
+    "Diane",
+    "a",
+    "Max",
+    "Peanutbutter",
+    "big",
+    "Todd",
+  ])
+);
