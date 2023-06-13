@@ -364,3 +364,23 @@ console.log(
     "Todd",
   ])
 );
+
+//Objects
+
+//A Make a user object
+let user = {
+  name: "Zack",
+  email: "Zack@Google.com",
+  age: 26,
+  purchased: [],
+};
+
+//B Update the user
+//1
+user.email = "Zack@PerScholas.com";
+
+//2
+user.age++;
+
+//C Adding keys and values
+user.house = "123 Grove street";
