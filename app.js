@@ -453,3 +453,44 @@ const oldAndLoud = (person) => {
 
 console.log("old and loud".toUpperCase());
 console.log(oldAndLoud(user));
+
+//Cat Combiner
+//1
+let cat1 = {
+  name: "Sarah",
+  breed: "Black",
+  age: 10,
+};
+
+console.log(cat1.breed);
+console.log(cat1.age);
+
+//2
+let cat2 = {
+  name: "Steve",
+  breed: "white",
+  age: 7,
+};
+
+//3
+const combineCats = (cat1, cat2) => {
+  console.log(cat1);
+  console.log(cat2);
+};
+
+combineCats(cat1, cat2);
+
+const combineCats2 = (cat1, cat2) => {
+  return {
+    name: cat1.name + cat2.name,
+    age: 1,
+    breed: cat1.breed + "-" + cat2.breed,
+  };
+};
+
+console.log(
+  combineCats2(
+    { name: "Craig", age: 20, breed: "unknown" },
+    { name: "Linda", age: 20, breed: "undefined" }
+  )
+);
