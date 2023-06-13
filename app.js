@@ -494,3 +494,11 @@ console.log(
     { name: "Linda", age: 20, breed: "undefined" }
   )
 );
+
+//4 Cat brain bender
+console.log(
+  combineCats2(
+    combineCats2(combineCats2(cat1, cat2), combineCats2(cat1, cat2)),
+    combineCats2(combineCats2(cat1, cat2), combineCats2(cat1, cat2))
+  )
+);
