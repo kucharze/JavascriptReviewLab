@@ -373,6 +373,13 @@ let user = {
   email: "Zack@Google.com",
   age: 26,
   purchased: [],
+  //E-1
+  friend: {
+    name: "Steve",
+    age: 20,
+    location: "PA",
+    purchased: [],
+  },
 };
 
 //B Update the user
@@ -384,3 +391,42 @@ user.age++;
 
 //C Adding keys and values
 user.house = "123 Grove street";
+
+//D Shipaholic
+//1
+user.purchased.push("Carbohydrates");
+user.purchased.push("peace of mind");
+user.purchased.push("Merino jodhpurs");
+
+console.log(user.purchased);
+
+//E Object-within-object
+//E-1 see above
+//E-2
+console.log(user.friend.name);
+
+//E-3
+console.log(user.friend.location);
+
+//E-4
+user.friend.age = 55;
+
+//E-5
+user.friend.purchased.push("The One Ring");
+
+//E-6
+user.friend.purchased.push("a latte");
+
+//E-7
+console.log(user.friend.purchased[1]);
+
+//F Loops
+//F-1
+for (let i = 0; i < user.purchased.length; i++) {
+  console.log(user.purchased[i]);
+}
+
+//F-2
+for (let i = 0; i < user.friend.purchased.length; i++) {
+  console.log(user.friend.purchased[i]);
+}
